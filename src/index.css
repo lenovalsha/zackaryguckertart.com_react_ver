@@ -11,3 +11,224 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+* {
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.body {
+  background-color: #E7E8D1;
+  position: relative;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #6bbcbc;
+  min-width: 160px;
+  font-weight: 900;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  /* padding: 12px 16px; */
+  z-index: 1;
+
+}
+
+.dropdown-content a:hover {
+  box-shadow: 0 0 10px 100px #B85041 inset;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+
+.nav-item:hover {
+  box-shadow: 0 0 10px 0px #B85041 inset;
+}
+.nav-item a{
+  color: #000000;
+   font-weight: 600;
+}
+
+.navContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-link{
+  color: black;
+  font-weight: 600;
+
+}
+/* for story beats in misc tab */
+
+  .col-lg-2 {
+    display: flex;
+    height: 100px;
+    align-items: center;
+  }
+  
+
+.col-lg-2 a{
+  color: black;
+}
+.col-lg-4 img {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+.col-lg-6 img {
+  overflow: hidden;
+  width: 100%;
+  /* height: 500px; */
+  padding-bottom: 10px;
+}
+.col-lg-12 .written{
+margin-top: 25px;
+}
+.title {
+  /* justify-content: center; */
+  font-size: 80px;
+  text-align: center;
+}
+/* ContactPage */
+.sm{
+  display: flex;
+  justify-content: center;
+  
+}
+.sm ul{
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer Page */
+a{
+  color: black;
+}* {
+  margin: 0;
+  padding: 0;
+}
+
+
+@keyframes float {
+  0% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+  }
+
+  50% {
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      transform: translatey(-20px);
+  }
+
+  100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+  }
+}
+
+
+
+#avatar {
+
+  width: 400px;
+  height: 400px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: translateY(0px);
+  animation: float 6s ease-in-out infinite;
+
+}
+
+.gallery {
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+  transform: translateY(10px);
+  animation: float 6s ease-in-out infinite;
+}
+
+
+
+.logo {
+
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transform: translateY(0px);
+}
+
+
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#youtube {
+  transform: translateY(0px);
+  animation: float 3s ease-in-out infinite;
+}
+
+body {
+  position: relative;
+}
+iframe{
+  width: 1448px;
+  height: 810px;
+
+}
+
+.backgroundintro{
+  background-image: url(..//public/images/background/scarletWave.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+       
+      
+}
+#textIntro{
+  color: black;
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 1.9rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+      'Trebuchet MS', sans-serif;
+
+    }
+
+  .email{
+    text-decoration: none;
+    color: #B85041;
+}
+#name{
+  margin-top: 50px; font-size: 7rem; overflow: visible;
+}
+#subname{
+  font-size: 1.1rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+#subname span{
+  box-shadow: 0 10px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.aboutme{
+  color: black; text-align: left;
+}
+#footer{
+  background-color: #f1f1f1; position: relative;
+}
