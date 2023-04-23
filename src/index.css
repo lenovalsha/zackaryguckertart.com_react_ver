@@ -112,6 +112,9 @@ margin-top: 25px;
 }
 
 /* Footer Page */
+#footer{
+  background-color: #f1f1f1; position: relative;
+}
 a{
   color: black;
 }* {
@@ -186,11 +189,6 @@ img {
 body {
   position: relative;
 }
-iframe{
-  width: 1448px;
-  height: 810px;
-
-}
 
 .backgroundintro{
   background-image: url(..//public/images/background/scarletWave.svg);
@@ -228,7 +226,4 @@ iframe{
 }
 .aboutme{
   color: black; text-align: left;
-}
-#footer{
-  background-color: #f1f1f1; position: relative;
 }

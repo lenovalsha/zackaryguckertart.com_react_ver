@@ -1,6 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import storyboardEntry from "../components/Storyboard/storyboardEntry";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 function Navbar() {
+  const location = useLocation();
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
   return (
     <nav class="navContainer">
       <div class="col-lg-6">
@@ -29,24 +42,23 @@ function Navbar() {
                 </a>
               </Link>
               <div class="dropdown-content">
-                <a class="nav-link" href="storyboard.html#coffeeShop">
-                  Coffee Shop - Comedy
-                </a>
-                <a class="nav-link" href="storyboard.html#Sci-Fi">
-                  Sci-Fi Action
-                </a>
-                <a class="nav-link" href="storyboard.html#goodSamaritan">
-                  Good Samaritan - Drama
-                </a>
+                {storyboardEntry.map((e) => {
+                  return (
+                    <Link to={"/storyboard#" + e.id} class="nav-link">
+                      {e.title}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           </li>
-
           <li class="nav-items">
             <div class="dropdown">
-              <a class="nav-link" href="Misc.html">
-                Misc Drawings
-              </a>
+              <Link to="/storyboard">
+                <a class="nav-link" href="Misc.html">
+                  Misc Drawings
+                </a>
+              </Link>
               <div class="dropdown-content">
                 <a class="nav-link" href="Misc.html#storyBeats">
                   Story Beats

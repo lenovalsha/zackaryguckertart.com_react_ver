@@ -1,6 +1,6 @@
 import React from "react";
-import storyboardEntry from "./storyboardEntry";
-import SingleStoryboard from "./singleStoryboard";
+import storyboardEntry from "../components/Storyboard/storyboardEntry";
+import SingleStoryboard from "../components/Storyboard/singleStoryboard";
 
 function createStoryboard(e) {
   return (
@@ -13,7 +13,7 @@ function createStoryboard(e) {
       boarded={e.boarded}
       content={e.content}
       youtube={e.youtube}
-      arstation={e.arstation}
+      artstation={e.artstation}
     />
   );
 }

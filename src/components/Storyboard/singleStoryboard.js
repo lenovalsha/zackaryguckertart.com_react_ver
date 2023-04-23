@@ -1,25 +1,26 @@
 import React from "react";
+import { pStyle } from "./styles";
 
 const singleStoryboard = (props) => {
   return (
     <div id={props.id}>
-      <div className="container" style={{ marginBottom: "2 00px" }}>
+      <div className="container" style={{ marginBottom: "200px" }}>
         <h2>{props.title}</h2>
         {props.gridFrame}
         {props.singleFrame}
         <div className="row">
           <div className="col-lg-12">
-            <p className="written">{props.author}</p>
-            <p>{props.boarded}</p>
-            <p className="written">
+            <p style={pStyle}>{props.author}</p>
+            <p style={pStyle}> {props.boarded}</p>
+            <p style={pStyle}>
               {props.content}
               <span>
-                <a href={props.youtube}>click here.</a>
+                <a href={props.youtube}> click here.</a>
               </span>
-              {props.arstation !== "" && (
+              {props.artstation !== "" && (
                 <span>
                   {" To see the process photos "}
-                  <a href={props.arstation}>click here.</a>
+                  <a href={props.artstation}>click here</a>.
                 </span>
               )}
             </p>
