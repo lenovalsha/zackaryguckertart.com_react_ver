@@ -45,16 +45,15 @@ code {
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
-
+  display:block;
 }
 
 .nav-item:hover {
   box-shadow: 0 0 10px 0px #B85041 inset;
 }
-.nav-item a{
+.nav-item, .nav-items {
   color: #000000;
-   font-weight: 600;
+   font-weight: 400;
 }
 
 .navContainer{
@@ -66,6 +65,11 @@ code {
   color: black;
   font-weight: 600;
 
+}
+ul li{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 /* for story beats in misc tab */
 

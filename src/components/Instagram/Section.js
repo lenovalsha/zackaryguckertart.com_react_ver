@@ -7,6 +7,9 @@ const Section = ({ children }) => {
     paddingLeft: "15px",
     marginRight: "auto",
     marginLeft: "auto",
+    border: "5px solid black",
+    backgroundColor: "white",
+
     "@media (min-width: 576px)": {
       maxWidth: "540px",
     },

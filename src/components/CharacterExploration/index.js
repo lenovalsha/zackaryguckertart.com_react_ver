@@ -1,9 +1,9 @@
-import React from "react";
 import { entry } from "./entry";
-import App from "../../App";
+import React from "react";
+
 function Image(props) {
   return (
-    <div className="col-lg-4">
+    <div class="col-lg-6">
       <img src={props.src} />
     </div>
   );
@@ -11,11 +11,11 @@ function Image(props) {
 function createImageComponents(e) {
   return <Image src={e.src} />;
 }
-export function Storybeats() {
+export function CharacterExploration() {
   return (
-    <div id="storyBeats" style={{ marginBottom: "100px" }}>
+    <div id="charExploration" style={{ marginBottom: "100px" }}>
       <div className="row">
-        <h1 className="title">Story Beats</h1>
+        <h1 className="title">Character Exploration</h1>
         {entry.map(createImageComponents)}
       </div>
     </div>
