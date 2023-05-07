@@ -1,5 +1,6 @@
 import React from "react";
 import YouTube from "../components/YouTube";
+import intro from "../assets/images/welcome.png";
 
 function Home() {
   return (
@@ -19,12 +20,7 @@ function Home() {
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
-              <img
-                id="avatar"
-                class="bg-img"
-                src="./images/welcome.png"
-                alt="... "
-              />
+              <img id="avatar" class="bg-img" src={intro} alt="... " />
             </div>
             <div className="col-lg-6 introtext">
               <p id="textIntro" className="font-weight-light">

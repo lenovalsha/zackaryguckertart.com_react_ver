@@ -5,6 +5,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
 import { ScrollIntoView } from "../hooks/navigation";
+import logo from "../assets/images/logo.png";
 function Navbar() {
   const location = useLocation();
   ScrollIntoView(location);
@@ -14,16 +15,16 @@ function Navbar() {
   };
   return (
     <nav className={`navContainer navbar ${isChange ? "change" : ""}`}>
-      <div className="col-lg-6">
+      <div className="col-lg-4">
         <div className="logo">
           <Link to="/">
             <a href="/index">
-              <img src="../images/logo.png" />
+              <img src={logo} />
             </a>
           </Link>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-7">
         <div className="hamburger-menu" onClick={Change}>
           <div className="item item-1"></div>
           <div className="item item-2"></div>
