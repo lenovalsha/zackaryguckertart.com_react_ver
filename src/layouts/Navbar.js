@@ -3,14 +3,19 @@ import { Link } from "react-router-dom";
 import storyboardEntry from "../components/Storyboard/storyboardEntry";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { useState } from "react";
 import { ScrollIntoView } from "../hooks/navigation";
 function Navbar() {
   const location = useLocation();
   ScrollIntoView(location);
+  const [isChange, setIsChange] = useState(false);
+  const Change = () => {
+    setIsChange(!isChange);
+  };
   return (
-    <nav class="navContainer">
-      <div class="col-lg-6">
-        <div class="logo">
+    <nav className={`navContainer navbar ${isChange ? "change" : ""}`}>
+      <div className="col-lg-6">
+        <div className="logo">
           <Link to="/">
             <a href="/index">
               <img src="../images/logo.png" />
@@ -19,7 +24,12 @@ function Navbar() {
         </div>
       </div>
       <div class="col-lg-6">
-        <ul class="nav justify-content-center font-weight-light">
+        <div className="hamburger-menu" onClick={Change}>
+          <div className="item item-1"></div>
+          <div className="item item-2"></div>
+          <div className="item item-3"></div>
+        </div>
+        <ul class="nav-list nav justify-content-center font-weight-light">
           <li class="nav-item">
             <Link to="/">Home</Link>
           </li>
@@ -66,6 +76,11 @@ function Navbar() {
           </li>
           <li class="nav-item">
             <Link to="https://www.artstation.com/zackrat_art">ArtStation</Link>
+          </li>
+          <li class="nav-item">
+            <Link to="https://www.youtube.com/@zackaryguckert1826">
+              YouTube
+            </Link>
           </li>
           <li class="nav-item">
             <Link to="/contact">ContactMe</Link>

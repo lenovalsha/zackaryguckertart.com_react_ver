@@ -7,7 +7,7 @@ import { FigureDrawing } from "../components/FigureDrawings";
 const Misc = () => {
   return (
     <div className="container" style={{ marginTop: "100px" }}>
-      {/* <Instagram /> */}
+      <Instagram />
       <Storybeats />
       <CharacterExploration />
       <FigureDrawing />
