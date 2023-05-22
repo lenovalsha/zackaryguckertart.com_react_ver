@@ -79,6 +79,25 @@ ul li{
   padding: 20px;
   
 }
+/* Storyboard */
+.development{
+  display: flex;
+  flex-wrap: wrap;
+}
+.development > img{
+flex: 20%;
+  width: 20%;
+  padding: 10px;
+}
+.development-photos{
+  margin: 20px;
+  animation: float2 2s ease-in-out infinite;
+  width: fit-content;
+  cursor: pointer;
+  color: white;
+  background-color: #B85041;
+font-size: 20px;
+}
 
 /* for story beats in misc tab */
 
@@ -157,6 +176,21 @@ a{
 
   100% {
       box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+  }
+}@keyframes float2 {
+  0% {
+      box-shadow: 0 5px 1px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+  }
+
+  50% {
+      box-shadow: 0 10px 1px 0px rgba(0, 0, 0, 0.2);
+      transform: translatey(-10px);
+  }
+
+  100% {
+      box-shadow: 0 5px 1px 0px rgba(0, 0, 0, 0.6);
       transform: translatey(0px);
   }
 }
@@ -332,3 +366,4 @@ body {
   right: 0;
 }
 }
+

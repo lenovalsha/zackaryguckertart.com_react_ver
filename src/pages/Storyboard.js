@@ -14,6 +14,7 @@ function createStoryboard(e) {
       content={e.content}
       youtube={e.youtube}
       artstation={e.artstation}
+      images={e.images}
     />
   );
 }

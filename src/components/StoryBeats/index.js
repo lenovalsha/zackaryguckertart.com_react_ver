@@ -1,11 +1,11 @@
 import React from "react";
 import { entry } from "./entry";
-import App from "../../App";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 function Image(props) {
   return (
     <div className="col-lg-4">
-      <LazyLoadImage src={props.src} alt={props.src} loading="lazy" />
+      <LazyLoadImage src={props.src} alt={props.src} effect="blur" />
     </div>
   );
 }

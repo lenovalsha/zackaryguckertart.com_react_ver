@@ -1,4 +1,23 @@
 import React from "react";
+import noir0 from "../../assets/images/storyboard/noir/Hard Boiled Girl Protag exploration 01.png";
+import noir1 from "../../assets/images/storyboard/noir/Kid_Noir_Development_01_-_Edited.png";
+import noir2 from "../../assets/images/storyboard/noir/Kid_Noir_Development_02_-_Edited.png";
+
+import rat0 from "../../assets/images/storyboard/rat/NeoAction Ideation Thumbs 01.png";
+import rat1 from "../../assets/images/storyboard/rat/NeoAction Ideation Thumbs 02.png";
+import rat2 from "../../assets/images/storyboard/rat/Rats Reference.png";
+import rat3 from "../../assets/images/storyboard/rat/Rats Setting Reference.png";
+
+import scifi0 from "../../assets/images/storyboard/scifi/zackary-guckert-magic-action-plot-edit-and-cam-roll-thumbnail.jpg";
+import scifi1 from "../../assets/images/storyboard/scifi/zackary-guckert-magic-action-shoe-box.jpg";
+import scifi2 from "../../assets/images/storyboard/scifi/zackary-guckert-magic-action-thumbnail-pass-01.jpg";
+import scifi3 from "../../assets/images/storyboard/scifi/zackary-guckert-magic-action-thumbnail-pass-02.jpg";
+import scifi4 from "../../assets/images/storyboard/scifi/zackary-guckert-magic-action-thumbnail-pass-03.jpg";
+import scifi5 from "../../assets/images/storyboard/scifi/zackary-guckert-magic-action-thumbnail-pass-04.jpg";
+import scifi6 from "../../assets/images/storyboard/scifi/zackary-guckert-magic-action-thumbnail-pass-05.jpg";
+import scifi7 from "../../assets/images/storyboard/scifi/zackary-guckert-magic-action-villian-experimentation.jpg";
+import scifi8 from "../../assets/images/storyboard/scifi/zackary-guckert-magic-convict-character-exploration.jpg";
+
 const gridStyle = {
   border: "0px",
   background: "padding-box padding-box rgba(0, 0, 0, 0.1)",
@@ -21,6 +40,12 @@ const sStyle = {
   height: "auto",
   aspectRatio: "560 / 314",
 };
+const noirImages = require.context("../../assets/images/storyboard/noir", true);
+const ratImages = require.context("../../assets/images/storyboard/rat", true);
+const scifiImages = require.context(
+  "../../assets/images/storyboard/scifi",
+  true
+);
 const storyboardEntry = [
   {
     id: "noir",
@@ -53,7 +78,9 @@ const storyboardEntry = [
       "One of my favourite projects I have done recently. I wanted to try my hand at doing a children's show. Since I have been watching a lot of film noir recently, I thought it would be fun to marry the two together To see the animatic",
     youtube: "https://youtu.be/W7Gv8rL3uzg",
     artstation: "",
+    images: noirImages.keys().map(noirImages),
   },
+
   {
     id: "ratFight",
     title: "Rat Fight! - Action Comedy",
@@ -64,7 +91,7 @@ const storyboardEntry = [
         src="https://speakerdeck.com/player/d4e7a117427c488faa7bd876815b528c"
         title="Rat Fight - Grid View"
         allowfullscreen="true"
-        style={sStyle}
+        style={gridStyle}
         data-ratio="1.2962962962962963"
       ></iframe>
     ),
@@ -85,6 +112,7 @@ const storyboardEntry = [
       "I really enjoyed working on this project, as it provided a fun opportunity to merge action and comedy, resulting in some exciting shots. The simple characters gave me lots of freedom to play with dynamic camera moves that I feel enhanced the sequence.",
     youtube: "",
     artstation: "",
+    images: ratImages.keys().map(ratImages),
   },
   {
     id: "Sci-Fi",
@@ -117,6 +145,7 @@ const storyboardEntry = [
       "The goal of this project was to practice my action muscles and it was a challenge. I had to cut and recut, add new scenes, reorganize plot beats more than I'm used too. That's being said I enjoyed the challenge and I can't wait to try action again! To see the animatic",
     youtube: "https://www.youtube.com/watch?v=dhURCJOzZ6M",
     artstation: "https://www.artstation.com/artwork/WBK0x3",
+    images: scifiImages.keys().map(scifiImages),
   },
 ];
 export default storyboardEntry;

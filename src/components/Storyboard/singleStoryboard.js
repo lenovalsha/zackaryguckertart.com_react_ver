@@ -1,7 +1,24 @@
 import React from "react";
 import { pStyle } from "./styles";
+import { useState } from "react";
+function SingleStoryboard(props) {
+  const [isShow, setIsShow] = useState(false);
 
-const singleStoryboard = (props) => {
+  const Show = () => {
+    setIsShow(!isShow);
+  };
+
+  const showStyle = {
+    display: isShow ? "block" : "none",
+  };
+  const spanStyle = {
+    display: "inline-block",
+    transform: isShow ? "rotate(90deg)" : "rotate(270deg)",
+    color: "Black",
+    fontWeight: "900",
+    marginLeft: "20px",
+    fontSize: "20px",
+  };
   return (
     <div id={props.id}>
       <div className="container" style={{ marginBottom: "200px" }}>
@@ -27,10 +44,18 @@ const singleStoryboard = (props) => {
               )}
             </p>
           </div>
+          <span className="development-photos" onClick={Show}>
+            Development Photos <span style={spanStyle}>></span>
+          </span>
+          <div className="development" style={showStyle}>
+            {props.images.map((item, index) => (
+              <img src={item} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
   );
-};
+}
 
-export default singleStoryboard;
+export default SingleStoryboard;
