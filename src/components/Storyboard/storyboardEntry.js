@@ -55,39 +55,36 @@ const storyboardEntry = [
     artstation: "",
   },
   {
-    id: "coffeeShop",
-    title: "Comedy Coffee",
+    id: "ratFight",
+    title: "Rat Fight! - Action Comedy",
     gridFrame: (
       <iframe
-        className="speakerdeck-iframe"
+        class="speakerdeck-iframe"
         frameborder="0"
-        src="https://speakerdeck.com/player/973e278e60964adfb86578272765908c"
-        title="Comedy Coffee Storyboards - Grid view"
+        src="https://speakerdeck.com/player/d4e7a117427c488faa7bd876815b528c"
+        title="Rat Fight - Grid View"
         allowfullscreen="true"
-        mozallowfullscreen="true"
-        style={gridStyle}
-        dataRatio="1.2962962962962963"
+        style={sStyle}
+        data-ratio="1.2962962962962963"
       ></iframe>
     ),
     singleFrame: (
       <iframe
-        className="speakerdeck-iframe"
+        class="speakerdeck-iframe"
         frameborder="0"
-        src="https://speakerdeck.com/player/aebd57976341414a927e4a6dd55abc84"
-        title="Comedy Coffee Storyboards - Frame view"
+        src="https://speakerdeck.com/player/6ac93218da034cada13b9a5de2d23708"
+        title="Rat Fight - Single View"
         allowfullscreen="true"
-        mozallowfullscreen="true"
         style={sStyle}
-        dataRatio="1.78343949044586"
+        data-ratio="1.78343949044586"
       ></iframe>
     ),
     author: "Written by Zackary Guckert (me)",
     boarded: "Boarded by Zackary Guckert (me)",
     content:
-      "This project I both boarded and wrote to practice my comedy and acting skills. I'm very happy with where it ended up. To see the animatic",
-    youtube:
-      "https://www.youtube.com/watch?v=KSs0n9tct5c&ab_channel=ZackaryGuckert",
-    artstation: "https://www.artstation.com/artwork/031Drw",
+      "I really enjoyed working on this project, as it provided a fun opportunity to merge action and comedy, resulting in some exciting shots. The simple characters gave me lots of freedom to play with dynamic camera moves that I feel enhanced the sequence.",
+    youtube: "",
+    artstation: "",
   },
   {
     id: "Sci-Fi",

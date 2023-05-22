@@ -14,9 +14,11 @@ const singleStoryboard = (props) => {
             <p style={pStyle}> {props.boarded}</p>
             <p style={pStyle}>
               {props.content}
-              <span>
-                <a href={props.youtube}> click here.</a>
-              </span>
+              {props.youtube !== "" && (
+                <span>
+                  <a href={props.youtube}> click here.</a>
+                </span>
+              )}
               {props.artstation !== "" && (
                 <span>
                   {" To see the process photos "}

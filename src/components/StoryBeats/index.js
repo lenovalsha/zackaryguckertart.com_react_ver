@@ -1,10 +1,11 @@
 import React from "react";
 import { entry } from "./entry";
 import App from "../../App";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 function Image(props) {
   return (
     <div className="col-lg-4">
-      <img src={props.src} />
+      <LazyLoadImage src={props.src} alt={props.src} loading="lazy" />
     </div>
   );
 }
