@@ -53,7 +53,8 @@ function SingleStoryboard(props) {
             </p>
           </div>
           <span className="development-photos" onClick={Show}>
-            Development Photos <span style={spanStyle}>></span>
+            Development Photos{" "}
+            <span style={spanStyle} className="fa fa-play"></span>
           </span>
           <div className="development" style={showStyle}>
             {props.images.map((item, index) => (
