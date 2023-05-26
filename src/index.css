@@ -98,7 +98,33 @@ flex: 20%;
   background-color: #B85041;
 font-size: 20px;
 }
-
+.development img{
+  cursor: pointer;
+}
+.enlarge{
+  width: 100%;
+  background-color: rgba(48, 45, 45, 0.598);
+  height: 100vh;
+  z-index: 999;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+}
+.enlarge img{
+  width:50%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.enlarge span{
+  font-size: 50px;
+  cursor: pointer;
+}
 /* for story beats in misc tab */
 
   .col-lg-2 {

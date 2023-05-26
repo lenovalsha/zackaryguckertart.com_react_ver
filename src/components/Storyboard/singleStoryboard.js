@@ -3,7 +3,8 @@ import { pStyle } from "./styles";
 import { useState } from "react";
 function SingleStoryboard(props) {
   const [isShow, setIsShow] = useState(false);
-
+  const [isClicked, setIsClicked] = useState(false);
+  const [picSRC, setPicSRC] = useState("");
   const Show = () => {
     setIsShow(!isShow);
   };
@@ -18,6 +19,13 @@ function SingleStoryboard(props) {
     fontWeight: "900",
     marginLeft: "20px",
     fontSize: "20px",
+  };
+  const enlargeStyle = {
+    display: isClicked ? "block" : "none",
+  };
+  const enlargePhoto = (item) => {
+    setIsClicked(true);
+    setPicSRC(item);
   };
   return (
     <div id={props.id}>
@@ -49,8 +57,14 @@ function SingleStoryboard(props) {
           </span>
           <div className="development" style={showStyle}>
             {props.images.map((item, index) => (
-              <img src={item} />
+              <img src={item} onClick={() => enlargePhoto(item)} />
             ))}
+          </div>
+          <div className="enlarge" style={enlargeStyle}>
+            <span className="close" onClick={() => setIsClicked(false)}>
+              X
+            </span>
+            <img src={picSRC} />
           </div>
         </div>
       </div>
