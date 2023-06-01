@@ -9,10 +9,9 @@ const Footer = () => {
           <div className="col-lg-6 col-6">
             <h4 className="aboutme">About me</h4>
             <p className="aboutme">
-              I’m currently in my 4th and last year in the Red Deer Polytechnic
-              Animation and Visual Effects program, specializing in
-              storyboarding. I plan on breaking into the animation industry and
-              working on a variety of films and shows.
+              I have a degree in Animation and Visual Effects from Red Deer
+              Polytechnic specializing in storyboarding, and now I'm currently
+              working on breaking into the industry.
             </p>
           </div>
           <div className="col-lg-6 col-6">
@@ -66,9 +65,9 @@ const Footer = () => {
       </div>
 
       <div className="text-center text-dark p-3">
-        © 2022 Made by :
-        <a className="text-dark" href="https://github.com/lenovalsha">
-          lenovalsha@gmail.com
+        © 2022 Web by{" "}
+        <a className="text-dark" href="https://leilanoval.com">
+          Leila Noval
         </a>
       </div>
     </>
