@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import storyboardEntry from "../components/Storyboard/storyboardEntry";
+import { entry } from "../components/Misc/entry";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -52,15 +53,13 @@ function Navbar() {
             <div class="dropdown">
               <Link to="/misc">Misc Drawings</Link>
               <div class="dropdown-content">
-                <Link to="/misc#storyBeats" class="nav-link">
-                  Story Beats
-                </Link>
-                <Link to="/misc#charExploration" class="nav-link">
-                  Character Exploration
-                </Link>
-                <Link to="/misc#figDrawings" class="nav-link">
-                  Figure Drawings
-                </Link>
+                {entry.map((e) => {
+                  return (
+                    <Link to={"/misc#" + e.id} class="nav-link">
+                      {e.name}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           </li>

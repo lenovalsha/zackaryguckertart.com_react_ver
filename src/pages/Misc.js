@@ -1,16 +1,23 @@
 import React from "react";
 import Instagram from "../components/Instagram/index";
-import { Storybeats } from "../components/StoryBeats";
-import { CharacterExploration } from "../components/CharacterExploration";
-import { FigureDrawing } from "../components/FigureDrawings";
+import { Miscellaneous } from "../components/Misc";
+import { entry } from "../components/Misc/entry";
 
+function createExpressions(e) {
+  return (
+    <Miscellaneous
+      images={e.images}
+      id={e.id}
+      name={e.name}
+      className={e.className}
+    />
+  );
+}
 const Misc = () => {
   return (
     <div className="container" style={{ marginTop: "100px" }}>
       <Instagram />
-      <Storybeats />
-      <CharacterExploration />
-      <FigureDrawing />
+      {entry.map(createExpressions)}
     </div>
   );
 };

@@ -393,3 +393,28 @@ body {
 }
 }
 
+/* MISC SECTION */
+.storybeats, .figdrawings{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.storybeats > img, .figdrawings >img{
+  flex: 33%;
+  width: 33%;
+  padding: 10px;
+}
+.expressions{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.expressions > img{
+  flex: 50%;
+  width: 50%;
+  padding: 10px;
+}
+.illustrations{
+  width: 50%;
+  margin: 0 auto;
+}

@@ -13,12 +13,16 @@ function Image(props) {
 function createImageComponents(e) {
   return <Image src={e.src} />;
 }
-export function CharacterExploration() {
+export function Miscellaneous(props) {
   return (
-    <div id="charExploration" style={{ marginBottom: "100px" }}>
+    <div id={props.id} style={{ marginBottom: "100px" }}>
       <div className="row">
-        <h1 className="title">Character Exploration</h1>
-        {entry.map(createImageComponents)}
+        <h1 className="title">{props.name}</h1>
+        <div className={props.className}>
+          {props.images.map((item, index) => (
+            <img src={item} />
+          ))}
+        </div>
       </div>
     </div>
   );
