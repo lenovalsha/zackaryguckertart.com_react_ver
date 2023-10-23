@@ -23,12 +23,78 @@ const sStyle = {
   aspectRatio: "560 / 314",
 };
 const noirImages = require.context("../../assets/images/storyboard/noir", true);
-const ratImages = require.context("../../assets/images/storyboard/rat", true);
-const scifiImages = require.context(
-  "../../assets/images/storyboard/scifi",
+const image1 = require.context("../../assets/images/storyboard/img1", true);
+const horrorImages = require.context(
+  "../../assets/images/storyboard/horror",
   true
 );
 const storyboardEntry = [
+  {
+    id: "hunterGhost",
+    title: "Hunter Vs Ghost (Action)",
+    gridFrame: (
+      <iframe
+        class="speakerdeck-iframe"
+        frameborder="0"
+        src="https://speakerdeck.com/player/64336b72581744869785e2fd409ebf27"
+        title="Hunter Vs Ghost (Action) - Grid View"
+        allowfullscreen="true"
+        style={gridStyle}
+        data-ratio="1.2962962962962963"
+      ></iframe>
+    ),
+    singleFrame: (
+      <iframe
+        class="speakerdeck-iframe"
+        frameborder="0"
+        src="https://speakerdeck.com/player/3bed229a84cb447289c24294e3e6e164"
+        title="Hunter Vs Ghost (Action)"
+        allowfullscreen="true"
+        style={sStyle}
+        data-ratio="1.78343949044586"
+      ></iframe>
+    ),
+    author: "Written by Zackary Guckert (me)",
+    boarded: "Boarded by Zackary Guckert (me)",
+    content:
+      "I really enjoyed working on this project, as it provided a fun opportunity to merge action and comedy, resulting in some exciting shots. The simple characters gave me lots of freedom to play with dynamic camera moves that I feel enhanced the sequence. To see the animatic",
+    youtube: "https://youtu.be/m3bEvCAZGgQ",
+    artstation: "",
+    images: image1.keys().map(image1),
+  },
+  {
+    id: "Horror",
+    title: "Horsin' Around (Children's Horror)",
+    gridFrame: (
+      <iframe
+        className="speakerdeck-iframe"
+        frameborder="0"
+        src="https://speakerdeck.com/player/c6b74517399c4f6a99b92deb7cdc2cd8"
+        title="Horsin' Around (Children's Horror) - Grid View"
+        allowfullscreen="true"
+        style={gridStyle}
+        dataRatio="1.2962962962962963"
+      ></iframe>
+    ),
+    singleFrame: (
+      <iframe
+        className="speakerdeck-iframe"
+        frameborder="0"
+        src="https://speakerdeck.com/player/464861ccd80b4ab7ad0506de24fef2bf"
+        title="Horsin' Around (Children's Horror) - Single View"
+        allowfullscreen="true"
+        style={sStyle}
+        dataRatio="1.78343949044586"
+      ></iframe>
+    ),
+    author: "Written by Zackary Guckert (me)",
+    boarded: "Boarded by Zackary Guckert (me)",
+    content:
+      "This project feels like a big step for me acting wise. I set out to make a simple scene where I could find moments that I could communicate through visuals and not just dialogue. I think I got there! This is also my first time doing a horror project. I love horror movies and I'd like to do more in the genre in the future! To see the animatic",
+    youtube: "https://youtu.be/fKy1KYoV4EU",
+    artstation: "",
+    images: horrorImages.keys().map(horrorImages),
+  },
   {
     id: "noir",
     title: "Kid Noir - Children's Drama",
@@ -61,73 +127,6 @@ const storyboardEntry = [
     youtube: "https://youtu.be/W7Gv8rL3uzg",
     artstation: "",
     images: noirImages.keys().map(noirImages),
-  },
-
-  {
-    id: "ratFight",
-    title: "Rat Fight! - Action Comedy",
-    gridFrame: (
-      <iframe
-        class="speakerdeck-iframe"
-        frameborder="0"
-        src="https://speakerdeck.com/player/d4e7a117427c488faa7bd876815b528c"
-        title="Rat Fight - Grid View"
-        allowfullscreen="true"
-        style={gridStyle}
-        data-ratio="1.2962962962962963"
-      ></iframe>
-    ),
-    singleFrame: (
-      <iframe
-        class="speakerdeck-iframe"
-        frameborder="0"
-        src="https://speakerdeck.com/player/6ac93218da034cada13b9a5de2d23708"
-        title="Rat Fight - Single View"
-        allowfullscreen="true"
-        style={sStyle}
-        data-ratio="1.78343949044586"
-      ></iframe>
-    ),
-    author: "Written by Zackary Guckert (me)",
-    boarded: "Boarded by Zackary Guckert (me)",
-    content:
-      "I really enjoyed working on this project, as it provided a fun opportunity to merge action and comedy, resulting in some exciting shots. The simple characters gave me lots of freedom to play with dynamic camera moves that I feel enhanced the sequence. To see the animatic",
-    youtube: "https://youtu.be/25BXaIUgcVU",
-    artstation: "",
-    images: ratImages.keys().map(ratImages),
-  },
-  {
-    id: "Sci-Fi",
-    title: "Magic Action",
-    gridFrame: (
-      <iframe
-        className="speakerdeck-iframe"
-        frameborder="0"
-        src="https://speakerdeck.com/player/a4f52615cc23422bb4c42019749f4f2a"
-        title="Sci-Fi Action Storyboards - Grid view"
-        allowfullscreen="true"
-        style={gridStyle}
-        dataRatio="1.2962962962962963"
-      ></iframe>
-    ),
-    singleFrame: (
-      <iframe
-        className="speakerdeck-iframe"
-        frameborder="0"
-        src="https://speakerdeck.com/player/096bb16a61e549568474cec6a00559cb"
-        title="Sci-Fi Action Storyboards - Frame view"
-        allowfullscreen="true"
-        style={sStyle}
-        dataRatio="1.78343949044586"
-      ></iframe>
-    ),
-    author: "Written by Zackary Guckert (me)",
-    boarded: "Boarded by Zackary Guckert (me)",
-    content:
-      "The goal of this project was to practice my action muscles and it was a challenge. I had to cut and recut, add new scenes, reorganize plot beats more than I'm used too. That's being said I enjoyed the challenge and I can't wait to try action again! To see the animatic",
-    youtube: "https://www.youtube.com/watch?v=dhURCJOzZ6M",
-    artstation: "https://www.artstation.com/artwork/WBK0x3",
-    images: scifiImages.keys().map(scifiImages),
   },
 ];
 export default storyboardEntry;

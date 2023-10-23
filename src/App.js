@@ -4,7 +4,6 @@ import Misc from "./pages/Misc";
 import Storyboard from "./pages/Storyboard";
 import ContactMe from "./pages/ContactMe";
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 // import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 

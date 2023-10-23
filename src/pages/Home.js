@@ -1,6 +1,7 @@
 import React from "react";
 import YouTube from "../components/YouTube";
 import intro from "../assets/images/welcome.png";
+
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Home() {

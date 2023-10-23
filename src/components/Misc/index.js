@@ -23,6 +23,7 @@ export function Miscellaneous(props) {
             <img src={item} />
           ))}
         </div>
+        <h4 className="blur">{props.blur}</h4>
       </div>
     </div>
   );

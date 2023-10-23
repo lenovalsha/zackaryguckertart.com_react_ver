@@ -188,7 +188,20 @@ a{
   padding: 0;
 }
 
+@keyframes float3 {
+  0% {
+     
+      transform: translatey(0px);
+  }
 
+  50% {
+      transform: translatey(-20px);
+  }
+
+  100% {
+      transform: translatey(0px);
+  }
+}
 @keyframes float {
   0% {
       box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
@@ -225,14 +238,9 @@ a{
 
 #avatar {
 
-  width: 400px;
-  height: 400px;
-  box-sizing: border-box;
-  border-radius: 50%;
-  overflow: hidden;
-  transform: translateY(0px);
-  animation: float 6s ease-in-out infinite;
-
+position: relative;
+left: -150px;
+  
 }
 
 .gallery {
@@ -261,7 +269,7 @@ img {
   width: 100%;
   height: auto;
 }
-
+ 
 #youtube {
   transform: translateY(0px);
   animation: float 3s ease-in-out infinite;
@@ -272,7 +280,7 @@ body {
 }
 
 .backgroundintro{
-  background-image: url(..//public/images/background/scarletWave.svg);
+  background-image: url(..//public/images/background/scarlet2.svg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -320,6 +328,15 @@ body {
     flex-direction: column;
     justify-content: space-around;
 }
+.blur{
+  font-size:15px ;
+}
+#avatar {
+
+  position: relative;
+  left: 0px;
+  }
+  
 
 .item {
     width: 100%;
@@ -394,6 +411,9 @@ body {
 }
 
 /* MISC SECTION */
+.blur{
+  padding: 50px;
+}
 .storybeats, .figdrawings{
   display: flex;
   justify-content: center;

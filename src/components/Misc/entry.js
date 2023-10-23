@@ -3,6 +3,11 @@ const expressions = require.context(
   true
 );
 const storybeats = require.context("../../assets/images/misc/storybeats", true);
+const shotStudies = require.context(
+  "../../assets/images/misc/shotStudies",
+  true
+);
+
 const figDrawings = require.context(
   "../../assets/images/misc/figdrawings",
   true
@@ -12,6 +17,13 @@ const illustrations = require.context(
   true
 );
 export const entry = [
+  {
+    id: "shotStudies",
+    name: "Shot Studies",
+    images: shotStudies.keys().map(shotStudies),
+    className: "storybeats",
+    blur: "Films referenced: Banshees of Inisherin (2022), Decision to Leave, (2022), Guillermo del Toro's Pinocchio (2022), and Power of the Dog (2021)",
+  },
   {
     id: "storybeats",
     name: "Storybeats",

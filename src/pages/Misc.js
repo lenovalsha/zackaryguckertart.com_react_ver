@@ -10,6 +10,7 @@ function createExpressions(e) {
       id={e.id}
       name={e.name}
       className={e.className}
+      blur={e.blur}
     />
   );
 }
