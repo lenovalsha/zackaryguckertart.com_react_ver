@@ -1,5 +1,5 @@
 {
-  "name": "zackguckertart.com",
+  "name": "zackaryguckertart.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,6 +13,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
@@ -43,3 +44,4 @@
     "gh-pages": "^5.0.0"
   }
 }
+

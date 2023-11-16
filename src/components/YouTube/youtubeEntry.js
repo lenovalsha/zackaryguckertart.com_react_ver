@@ -33,7 +33,7 @@ const youtubeEntry = [
       <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/dhURCJOzZ6M"
+        src="https://www.youtube.com/embed/m3bEvCAZGgQ?si=7M6FrTgEqdbOBbv-"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -47,7 +47,7 @@ const youtubeEntry = [
       <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/KSs0n9tct5c"
+        src="https://www.youtube.com/embed/fKy1KYoV4EU?si=6O8-Xin0MV8oRFj7"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
