@@ -37,14 +37,7 @@ const Footer = () => {
                   LinkedIn
                 </a>
               </div>
-              <div className="col-lg-2">
-                <a
-                  href=" https://twitter.com/ZackRat_Art"
-                  className="fa fa-twitter"
-                >
-                  Twitter
-                </a>
-              </div>
+
               <div className="col-lg-2">
                 <a
                   href="  https://www.artstation.com/zackrat_art"

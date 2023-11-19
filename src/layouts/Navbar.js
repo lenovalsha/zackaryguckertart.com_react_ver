@@ -71,9 +71,7 @@ function Navbar() {
           <li class="nav-item">
             <Link to="https://www.instagram.com/zack.rat.art/">Instagram</Link>
           </li>
-          <li class="nav-item">
-            <Link to="https://twitter.com/ZackRat_Art">Twitter</Link>
-          </li>
+
           <li class="nav-item">
             <Link to="https://www.artstation.com/zackrat_art">ArtStation</Link>
           </li>

@@ -54,8 +54,8 @@ const storyboardEntry = [
     author: "Written by Zackary Guckert (me)",
     boarded: "Boarded by Zackary Guckert (me)",
     content:
-      "One of my favourite projects I have done recently. I wanted to try my hand at doing a children's show. Since I have been watching a lot of film noir recently, I thought it would be fun to marry the two together To see the animatic",
-    youtube: "https://youtu.be/W7Gv8rL3uzg",
+      "The goal for this project was to practice character acting in one location, and have in finished in a week to show off to some recruiters. The plot was fun to come up with and I think I actually do my best work when I have a tight deadline.",
+    youtube: "",
     artstation: "",
     images: images2.keys().map(images2),
   },
